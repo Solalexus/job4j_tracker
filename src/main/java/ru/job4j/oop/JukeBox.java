@@ -1,23 +1,19 @@
 package ru.job4j.oop;
 
 public class JukeBox {
-    public void music(int position) {
-        if (position == 1) {
-            System.out.println("Пусть бегут неуклюже");
-        } else if (position == 2) {
-            System.out.println("Спокойной ночи");
-        } else {
-            System.out.println("Песня не найдена");
-        }
+    public String music(int position) {
+        return switch (position) {
+            case 1 -> "Пусть бегут неуклюже";
+            case 2 -> "Спокойной ночи";
+            default -> "Песня не найдена";
+        };
     }
 
     public static void main(String[] args) {
         JukeBox song = new JukeBox();
-        int trek = 1;
-        song.music(trek);
-        trek = 2;
-        song.music(trek);
-        trek = 3;
-        song.music(trek);
+        System.out.println(song.music(1));
+        System.out.println(song.music(8));
+        System.out.println(song.music(2));
+
     }
 }
