@@ -7,29 +7,29 @@ public class Calculator {
         return x + y;
     }
 
-    public int multiply(int a) {
-        return x * a;
+    public int multiply(int y) {
+        return x * y;
     }
 
-    public static int minus(int z) {
-        return z - x;
+    public static int minus(int y) {
+        return y - x;
     }
 
-    public int divide(int c) {
-        return c / x;
+    public int divide(int y) {
+        return y / x;
     }
 
-    public int sumAllOperation() {
-        return sum(4) + multiply(8) + minus(14) + divide(9);
+    public int sumAllOperation(int z) {
+        return sum(z) + multiply(z) + minus(z) + divide(z);
     }
 
     public static void main(String[] args) {
         System.out.println(sum(4));
         Calculator calculator = new Calculator();
         System.out.println(calculator.multiply(8));
-        System.out.println(minus(14));
-        System.out.println(calculator.divide(9));
+        System.out.println(minus(6));
+        System.out.println(calculator.divide(12));
         Calculator calculator1 = new Calculator();
-        System.out.println(calculator1.sumAllOperation());
+        System.out.println(calculator1.sumAllOperation(9));
     }
 }
