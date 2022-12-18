@@ -28,8 +28,6 @@ public class Calculator {
         Calculator calculator = new Calculator();
         System.out.println(calculator.multiply(8));
         System.out.println(minus(6));
-        System.out.println(calculator.divide(12));
-        Calculator calculator1 = new Calculator();
-        System.out.println(calculator1.sumAllOperation(9));
+        System.out.println(calculator.sumAllOperation(9));
     }
 }
