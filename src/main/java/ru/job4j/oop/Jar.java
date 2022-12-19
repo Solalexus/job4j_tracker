@@ -13,8 +13,8 @@ public class Jar {
     }
 
     public static void main(String[] args) {
-        Jar fist = new Jar(5);
-        Jar second = new Jar(10);
+        Jar fist = new Jar(10);
+        Jar second = new Jar(5);
         System.out.println("first: " + fist.value + ".second: " + second.value);
         fist.pour(second);
         System.out.println("first: " + fist.value + ".second: " + second.value);
