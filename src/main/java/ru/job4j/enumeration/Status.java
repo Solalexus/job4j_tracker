@@ -1,7 +1,7 @@
 package ru.job4j.enumeration;
 
 public enum Status {
-    ACCEPTED("Принят"){
+    ACCEPTED("Принят") {
         private String message = "Автомобиль принят на СТО";
 
         @Override
