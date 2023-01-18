@@ -14,5 +14,6 @@ public class Main {
         sportCar.steer();
         sportCar.brake();
         ((SportCar) sportCar).refill();
+        Vehicle.getDragCoefficient();
     }
 }
