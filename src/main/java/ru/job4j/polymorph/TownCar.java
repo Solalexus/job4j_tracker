@@ -20,4 +20,9 @@ public class TownCar implements Vehicle {
     public void brake() {
         System.out.println("Стандартная рулевая система.");
     }
+
+    @Override
+    public void refill() {
+        System.out.println("Заправлять 60л бензина.");
+    }
 }
