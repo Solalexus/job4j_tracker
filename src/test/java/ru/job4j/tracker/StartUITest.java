@@ -92,7 +92,7 @@ public class StartUITest {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
         Item item = tracker.add(new Item("Find by id"));
-        Input in = new StubInput(new String[]{"0", String.valueOf(item.getName()), "1"});
+        Input in = new StubInput(new String[]{"0", item.getName(), "1"});
         UserAction[] actions = {new FindByNameAction(out), new ExitAction(out)};
         new StartUI(out).init(in, tracker, actions);
         String ln = System.lineSeparator();
