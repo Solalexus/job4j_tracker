@@ -42,9 +42,9 @@ public class ValidateInputTest {
     @Test
     public void whenNegativeInput() {
         Output out = new StubOutput();
-        Input in = new StubInput(new String[]{"-1", " -4", "0"});
+        Input in = new StubInput(new String[]{"-1"});
         ValidateInput input = new ValidateInput(out, in);
         int selected = input.askInt("Enter menu:");
-        assertThat(selected).isEqualTo(0);
+        assertThat(selected).isEqualTo(-1);
     }
 }
